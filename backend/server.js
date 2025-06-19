@@ -46,7 +46,7 @@ app.use('/uploads', express.static('uploads', {
   }
 }));
 
-app.use(express.static(path.join(__dirname, "/frontend/dist")));
+app.use(express.static(path.join(__dirname, "/frontend/build")));
 
 app.use(cors({
   origin: [
